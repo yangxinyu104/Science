@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dp_10">
+        <TextView
+            android:id="@+id/adapter_community_dianji_adapter_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="姓名"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:layout_marginRight="@dimen/dp_10"
+            android:textColor="#000000"/>
+        <TextView
+            android:id="@+id/adapter_community_dianji_adapter_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="内容"
+            android:layout_toRightOf="@+id/adapter_community_dianji_adapter_name"
+            android:layout_marginLeft="@dimen/dp_10"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

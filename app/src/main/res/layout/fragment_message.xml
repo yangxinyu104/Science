@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_70"
+            android:background="#F2F2F2">
+
+            <RadioGroup
+                android:layout_width="@dimen/dp_188"
+                android:layout_height="@dimen/dp_30"
+                android:orientation="horizontal"
+                android:id="@+id/group_id"
+                android:layout_alignParentBottom="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/dp_10"
+                android:background="@drawable/groupshope">
+
+                <RadioButton
+                    android:layout_width="@dimen/dp_94"
+                    android:layout_height="@dimen/dp_30"
+                    android:id="@+id/rbmessage_id"
+                    android:text="消息"
+                    android:gravity="center"
+                    android:button="@null"
+                    android:background="@drawable/rbleft"
+                    android:checked="true"/>
+
+                <RadioButton
+                    android:layout_width="@dimen/dp_94"
+                    android:layout_height="@dimen/dp_30"
+                    android:id="@+id/rblinkman_id"
+                    android:text="联系人"
+                    android:gravity="center"
+                    android:button="@null"
+                    android:background="@drawable/rbright"/>
+            </RadioGroup>
+
+            <ImageView
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24"
+                android:src="@mipmap/common_nav_btn_add_n"
+                android:id="@+id/cross_id"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp_12"
+                android:layout_alignBottom="@id/group_id"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>

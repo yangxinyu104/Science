@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.SignatureActivity"
+    android:orientation="vertical"
+    android:layout_marginTop="@dimen/dp_18">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#f2f2f2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50">
+        <ImageView
+            android:layout_marginLeft="@dimen/dp_12"
+            android:id="@+id/signature_finish"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_150">
+
+        <EditText
+            android:gravity="top"
+            android:textSize="@dimen/sp_15"
+            android:background="@drawable/shape_ed_bg"
+            android:id="@+id/signature_EditText"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:maxLength="20"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_100"
+            />
+
+        <TextView
+            android:id="@+id/signature_TextView"
+            android:layout_marginBottom="@dimen/dp_40"
+            android:layout_marginRight="@dimen/dp_35"
+            android:gravity="end"
+            android:layout_alignParentBottom="true"
+             android:layout_alignParentRight="true"
+            android:text="0/20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+
+
+
+
+</LinearLayout>

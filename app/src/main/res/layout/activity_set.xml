@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    tools:context=".activity.SetActivity"
+    android:orientation="vertical"
+    android:background="#f2f2f2"
+    android:layout_marginTop="@dimen/dp_18">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:background="#f2f2f2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_50">
+
+        <ImageView
+            android:layout_marginLeft="@dimen/dp_12"
+            android:id="@+id/set_finish"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="@dimen/dp_20"
+            android:text="设置"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <ImageView
+        android:layout_marginBottom="@dimen/dp_10"
+        android:src="@drawable/shape_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_2" />
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_20"
+        android:orientation="vertical"
+        android:background="@drawable/shape_set_bg"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/set_head_RelativeLayout"
+            android:layout_marginTop="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40">
+
+            <TextView
+                android:paddingTop="@dimen/dp_15"
+                android:text="头像"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                fresco:actualImageScaleType="centerCrop"
+                fresco:placeholderImageScaleType="centerCrop"
+                fresco:roundAsCircle="true"
+                android:id="@+id/set_head"
+               android:layout_marginTop="@dimen/dp_5"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_alignParentRight="true"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="昵称"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/set_name"
+                android:text="杨新宇"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="性别"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/set_sex"
+                android:text="男"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/set_qian"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="签名"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <ImageView
+
+                android:src="@mipmap/next"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_20"
+        android:orientation="vertical"
+        android:background="@drawable/shape_set_bg"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="生日"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/set_data"
+                android:text="1999-10-04"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="电话"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/set_phone"
+                android:text="16621178865"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginBottom="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="邮箱"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/set_email"
+                android:text="2447892835@qq.com"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/dp_20"
+        android:orientation="vertical"
+        android:background="@drawable/shape_set_bg"
+        android:layout_marginRight="@dimen/dp_30"
+        android:layout_marginLeft="@dimen/dp_30"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="积分"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/set_fen"
+                android:text="120"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="VIP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/set_vip"
+                android:text="否"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/dp_10"
+            android:paddingLeft="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Face ID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/set_id"
+                android:text="点击绑定"
+                android:layout_marginRight="@dimen/dp_20"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/set_backlogin"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:layout_marginTop="@dimen/dp_15"
+            android:paddingLeft="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:textColor="#f00"
+                android:text="退出登录"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

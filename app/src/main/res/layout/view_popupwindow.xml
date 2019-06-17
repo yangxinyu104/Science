@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".activity.AttentionActivity"
+   >
+
+
+    <LinearLayout
+        android:background="#f2f2f2"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/popw_ps"
+            android:background="#ffff"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_52">
+
+            <ImageView
+                android:src="@mipmap/camera"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24" />
+            <TextView
+                android:paddingLeft="@dimen/dp_10"
+                android:textSize="@dimen/sp_20"
+                android:gravity="center"
+                android:text="拍摄"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_24" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:src="@drawable/shape_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0_1" />
+
+        <LinearLayout
+            android:id="@+id/popw_xc"
+            android:background="#ffff"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_52">
+
+            <ImageView
+                android:src="@mipmap/picture"
+                android:layout_width="@dimen/dp_24"
+                android:layout_height="@dimen/dp_24" />
+            <TextView
+                android:paddingLeft="@dimen/dp_10"
+                android:textSize="@dimen/sp_20"
+                android:gravity="center"
+                android:text="相册"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_24" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/popw_dimess"
+            android:layout_marginTop="@dimen/dp_10"
+            android:background="#ffff"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_52">
+
+
+            <TextView
+                android:paddingLeft="@dimen/dp_10"
+                android:textSize="@dimen/sp_20"
+                android:gravity="center"
+                android:text="取消"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_24" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
